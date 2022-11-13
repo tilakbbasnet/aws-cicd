@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre build phase..
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn clean package
+  post-build:
+    commands:
+      - echo Successfully built on  `date`
+artifacts:
+  files:
+    - target/awscicd.jar
+  discard-paths: yes
