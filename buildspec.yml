@@ -8,7 +8,7 @@ phases:
     commands:
       - echo Build started on `date`
       - mvn clean package
-  post-build:
+  post_build:
     commands:
       - echo Successfully built on  `date`
 artifacts:
